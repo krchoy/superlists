@@ -67,7 +67,7 @@ class NewVisitorTest(StaticLiveServerTestCase):
 # Now a new user, Francis, comes to the site
 
 # Use a new browser session to isolate from Edith's data
-		self.browser.quit()
+		self.browser.close()
 		self.browser = webdriver.Chrome('../chromedriver.exe')
 		
 #Francis should not see Edith's list
